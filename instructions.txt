@@ -9,3 +9,11 @@ Install django
 Create django project
 
     django-admin startproject helloworld
+
+Execute migrations
+
+    python manage.py migrate
+
+Start server
+
+    python3 manage.py runserver 0:7000
