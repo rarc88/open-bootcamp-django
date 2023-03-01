@@ -1,0 +1,11 @@
+Create virtual environment
+
+    pipenv shell
+
+Install django
+
+    pipenv install Django
+
+Create django project
+
+    django-admin startproject helloworld
