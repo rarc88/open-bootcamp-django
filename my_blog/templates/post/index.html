@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+</head>
+<body>
+    <h1>author</h1>
+        <p>{{ author.name }} ({{ author.email }})</p>
+
+    <h1>filtered</h1>
+    <ol>
+        {% for author in filtered %}
+            <li>{{ author.name }} ({{ author.email }})</li>
+        {% endfor %}
+    </ol>
+    <h3>total filtered: {{ filtered|length }}</h3>
+
+    <h1>limit</h1>
+    <ol>
+        {% for author in limit %}
+            <li>{{ author.name }} ({{ author.email }})</li>
+        {% endfor %}
+    </ol>
+    <h3>total limit: {{ limit|length }}</h3>
+
+    <h1>offset</h1>
+    <ol>
+        {% for author in offset %}
+            <li>{{ author.name }} ({{ author.email }})</li>
+        {% endfor %}
+    </ol>
+    <h3>total offset: {{ offset|length }}</h3>
+
+    <h1>authors</h1>
+    <ol>
+        {% for author in authors %}
+            <li>{{ author.name }} ({{ author.email }})</li>
+        {% endfor %}
+    </ol>
+    <h3>total authors: {{ authors|length }}</h3>
+</body>
+</html>

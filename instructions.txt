@@ -17,3 +17,24 @@ Execute migrations
 Start server
 
     python3 manage.py runserver 0:7000
+
+Create APP
+
+    python3 manage.py startapp comments
+
+Check installed APP
+
+    python3 manage.py check comments
+
+Make migrations
+
+    python3 manage.py makemigrations
+
+Django seed
+
+    pipenv install django-seed
+    pipenv install psycopg2-binary (if error)
+
+Admin panel
+
+    python3 manage.py createsuperuser
